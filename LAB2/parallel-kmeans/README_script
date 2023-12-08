@@ -1,0 +1,20 @@
+########################################################################################
+To compile all the files run: make                                                     #
+                                                                                       #
+To delete .o files and images run: make clean                                          #
+                                                                                       #
+Information about seq_main execution in file README_seq_main.                          #
+                                                                                       #
+To run seq_main 10 times and get mean execution time and standard deviation            #
+for all the thread values at once,                                                     #
+follow these steps: 1)mkdir test in our working directory.                             #
+2)Specify the number of clusters in the following format: ./script.sh [NumClusters]    #
+3)This script will write all the measurements in the directory named as test. It will  #
+also make a file with name "newlog_file" with the mean execution time and standard     #
+deviation, following by the number of threads (1,2,4,8,16,32,64) using manipulator.c   #
+4)To delete the temporary file that script used, run: rm temp_file                     #
+                                                                                       #
+                                                                                       #
+If you want to run again this script, please delete the previous test file             #
+with the command: rm -r test                                                           #
+########################################################################################
